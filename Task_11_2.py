@@ -17,7 +17,7 @@ with open('test3.csv', encoding='utf-8') as file:
     for i in lst[1:]:
         su += int(i[4])
     lst0 = lst[0]
-    newlst=sorted(lst[1:], key=lambda x: (x[3],x[1],[2]))
+    newlst=sorted(lst[1:], key=lambda x: (x[3],x[1],x[2]))
     print(lst0, newlst, su)
 
 ws.append(lst0)
