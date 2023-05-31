@@ -11,7 +11,6 @@ def gen():
                 j = i
                 j *= 1
         yield j
-
 gener = gen()
 for i in range(int(input())):
     print(next(gener), end = ',')
