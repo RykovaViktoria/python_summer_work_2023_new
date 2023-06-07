@@ -1,5 +1,5 @@
 import re
-n = input()
+n = input('Введите двузначное число -->')
 s = '44 326'
 n1=str(int(n[0])-1)
 n2=n[1]
