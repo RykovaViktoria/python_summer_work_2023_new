@@ -1,5 +1,4 @@
 class Fib:
-    su = 0
     def __init__(self, limit):
         self.first = 1
         self.second = 0
