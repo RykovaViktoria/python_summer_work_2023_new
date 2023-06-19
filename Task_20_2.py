@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-df = pd.DataFrame([[1, 'lala', 23],
+df = pd.DataFrame([['dd', 'lala', 23],
                   [2, 'rurk', 44],
                   [3, 'rer', 2]])
 
