@@ -201,30 +201,30 @@
 #     print(next(gen_sum))
 
 
-# def sum_list(lst):
-#     cur_sum = 0
-#     i = 0
-#     while True:
-#         if i >= len(lst):
-#             return
-#         cur_sum += lst[i]
-#         yield cur_sum
-#         i += 1
-#
-# lst = list(map(int,input().split()))
-# gen_sum = sum_list(lst)
-# for _ in range(len(lst)):
-#     print(next(gen_sum))
-
-def gen():
+def sum_list(lst):
+    cur_sum = 0
     i = 0
     while True:
+        if i >= len(lst):
+            return
+        cur_sum += lst[i]
+        yield cur_sum
         i += 1
-        for j in range(i):
-            yield i
 
+lst = list(map(int,input().split()))
+gen_sum = sum_list(lst)
+for _ in range(len(lst)):
+    print(next(gen_sum))
 
-gener = gen()
-for i in range(int(input())):
-    print(next(gener), end = ',')
+# def gen():
+#     i = 0
+#     while True:
+#         i += 1
+#         for j in range(i):
+#             yield i
+#
+#
+# gener = gen()
+# for i in range(int(input())):
+#     print(next(gener), end = ',')
 

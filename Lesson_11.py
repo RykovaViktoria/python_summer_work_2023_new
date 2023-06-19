@@ -21,13 +21,13 @@
 #     print(row)
 
 
-# import csv
-# with open('test2.csv', encoding='utf-8') as file:
-#     rows = csv.DictReader(file) - создает словарь по столбцам (берет 1ю строку как ключи name salary)
-#     su = 0
-#     for d in rows:
-#         su += int(d['salary'])
-#     print(f'ИТОГО: {su}')
+import csv
+with open('test2.csv', encoding='utf-8') as file:
+    rows = csv.DictReader(file) #- создает словарь по столбцам (берет 1ю строку как ключи name salary)
+    su = 0
+    for d in rows:
+        su += int(d['salary'])
+    print(f'ИТОГО: {su}')
 
 # import openpyxl
 # wb = openpyxl.load_workbook('excel.xlsx')
@@ -191,15 +191,15 @@
 # import calendar
 # print(calendar.isleap(1900))
 
-import calendar
-year = int(input())
-d = {}
-for mo in range(1,13):
-    month = calendar.monthrange(year, mo)
-    for i in range(1, month[1]+1):
-        w = calendar.weekday(year, mo, i)
-        d[w] = d.get(w, 0) + 1
-print(d)
+# import calendar
+# year = int(input())
+# d = {}
+# for mo in range(1,13):
+#     month = calendar.monthrange(year, mo)
+#     for i in range(1, month[1]+1):
+#         w = calendar.weekday(year, mo, i)
+#         d[w] = d.get(w, 0) + 1
+# print(d)
 
 
 
