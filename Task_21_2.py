@@ -1,5 +1,5 @@
 import numpy as np
-x = np.array([[3,4,5,4],[3,4,7,2],[52,6,7,2]])
+x = np.array([[3,4,5],[3,4,9],[52,6,10]])
 print(x)
 lst =[]
 lst.append(x[0][0])
@@ -16,6 +16,9 @@ while a-1 > i and b-1 > j:
         lst.append(x[i+1][j])
         i += 1
         j = j
+print(i,j)
+if j < b-1: lst.append(x[i][j+1])
+elif i < a-1: lst.append(x[i+1][j])
 
 print(' + '.join(map(str, lst)), '=', sum(lst))
 
