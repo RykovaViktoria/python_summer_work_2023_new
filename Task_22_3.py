@@ -6,3 +6,5 @@ for n, i in enumerate(s):
         s[n] = '<kw>'
 print(' '.join(s))
 
+
+
