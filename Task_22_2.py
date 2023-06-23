@@ -9,5 +9,5 @@ for k,v in d:
         lst.append(d[i])
         s = k
     i += 1
-print('max_len =', len(lst))
+print(lst[::-1], f'\nmax_len =', len(lst))
 
