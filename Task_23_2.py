@@ -18,9 +18,9 @@ df = pd.DataFrame(columns = names)
 for i in res1:
     df.loc[len(df)]=list(i)
 print(df)
-df.plot('book_id','amount')
+df['amount'].plot(title = 'Amount')
 plt.show()
-df.plot('book_id','price')
+df['price'].plot(title = 'Price')
 plt.show()
 conn.close()
 
