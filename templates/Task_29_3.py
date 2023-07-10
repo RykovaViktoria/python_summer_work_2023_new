@@ -24,3 +24,5 @@ def func(s,w):
     else: return False
 print(func(s,w))
 
+
+
